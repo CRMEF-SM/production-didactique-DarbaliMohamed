@@ -27,7 +27,7 @@ addExamen.addEventListener("submit", async (e) => {
     }
   });
 
-  // Fetch tous les parents Ajax Request
+  // Fetch tous les examens Ajax Request
 const fetchTest = async () => {
   const data = await fetch("../action.php?examen=1", {
     method: "GET",
@@ -67,7 +67,7 @@ examen.addEventListener("click", (e) => {
 
   };
 
-  // supprimer parent Ajax Request
+  // supprimer user Ajax Request
   examen.addEventListener("click", (e) => {
     if (e.target && e.target.matches("a.deleteLink")) {
       e.preventDefault();
