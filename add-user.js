@@ -25,7 +25,7 @@ addUserAdmin.addEventListener("submit", async (e) => {
     }
   });
 
-  // Fetch tous les parents Ajax Request
+  // Fetch tous les utilisateur Ajax Request
 const fetchAllUsers = async () => {
   const data = await fetch("../action.php?utilisateur=1", {
     method: "GET",
